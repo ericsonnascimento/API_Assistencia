@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Assistencia</title>
+</head>
+<body>
+    <h1> API Assistencia</h1>
+    <h1> Menu</h1>
+    <ul>
+         <li>
+             <a href="/">Home</a>
+         </li>
+        <li>
+            <a href="/clientes">Cadastro</a>
+        </li>
+     </ul>
+    <h2> Edição do cliente {{cliente.nome}}</h2>
+    <form method="POST" action="/clientes/editar/{{cliente.cliente_id}}">
+        Nome: <input type="text" name="nome" value="{{cliente.nome}}"><br/>
+        Telefone: <input type="text" name="telefone" value={{cliente.telefone}}><br/>
+        Email: <input type="text" name="email" value="{{cliente.email}}"><br/>
+        <button type="submit" value="Submit">Editar</button>
+    </form>
+</body>
+</html>
