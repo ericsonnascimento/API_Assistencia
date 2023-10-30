@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>API Assistencia</title>
 </head>
 <body>
-    <h1> API Assistencia</h1>
-    <h1> Menu</h1>
-    <ul>
-         <li>
-             <a href="/">Home</a>
-         </li>
-        <li>
-            <a href="/clientes">Cadastro</a>
-        </li>
-     </ul>
+    <header>
+        <img src="images/logo.png" alt="logo_marca">
+
+        <h1> API Assistencia</h1>
+        
+        <nav>
+            <h2>Menu</h2>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/clientes">Cadastro</a>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+
     <h2> Edição do cliente {{cliente.nome}}</h2>
     <form method="POST" action="/clientes/editar/{{cliente.cliente_id}}">
         Nome: <input type="text" name="nome" value="{{cliente.nome}}"><br/>

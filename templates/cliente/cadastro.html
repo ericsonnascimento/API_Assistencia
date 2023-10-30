@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>API Assistencia</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -22,6 +22,14 @@
                 </li>
             </ul>
         </nav>        
-    </header>
+    </header>  
+    
+    <h3>Cadastrar novo cliente</h3>
+    <form method="POST" action="/clientes/cadastrar">
+        Nome: <input type="text" name="nome"><br/>
+        Telefone: <input type="text" name="telefone"><br/>
+        Email: <input type="text" name="email"><br/>
+        <button type="submit" value="Submit">Cadastrar</button>
+    </form>
 </body>
 </html>
